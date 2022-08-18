@@ -11,6 +11,7 @@ import javax.persistence.*;
 @Table(name = "investors")
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Investor {
 
     @Id
@@ -28,6 +29,6 @@ public class Investor {
     private Double currentPosition;
 
     @Column(name = "cpf", nullable = false)
-    private Double cpf;
+    private String cpf;
 
 }
